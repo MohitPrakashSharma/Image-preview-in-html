@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+	<meta charset=utf-8 />
+	<title>Image Preview</title>
+</head>
+<body>
+ 	<div style="position:absolute;height:90%;bottom:5%;">
+      <input class="form-control" type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+      <b><label class="form-control"  for="file" style="cursor: pointer;border:solid;padding:10px;">Upload Blog Image</label></b>
+      <p>
+      	<span class="close">&times;</span>
+      	<img id="output" width="200" style="border: double;width:200px;height:150px;"/>
+      </p>
+    </div>
+</body>
+</html>
